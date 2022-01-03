@@ -1,0 +1,201 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* variables */
+:root {
+  --yellow-color:  hsl(42 100% 56%);
+  --black-color: #111;
+  --white-color: #fff;
+  --basic_size: 10px;
+  --font_title_size: 44px;
+  --font_subtitle_size: 20px;
+  --basic_font_weight: 100;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+/* all similar content styling codes */
+section{
+    padding: calc(var(--basic_size)*2) 0;
+}
+.max-width{
+    max-width: calc(var(--basic_size)*130);
+    padding: 0 calc(var(--basic_size)*8);
+    margin: auto;
+}
+.max-width-navbar{
+  max-width: calc(var(--basic_size)*130);
+  padding: 0 0px;
+  margin: auto;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: hsl(0 10% 10%);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--yellow-color);
+    border: 2px solid var(--white-color);
+    border-radius: calc(var(--basic_size)*2);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(0 10% 10%);
+}
+::-webkit-scrollbar-button{
+  border: calc(var(--basic_size)*3) solid var(--white-color);
+  background-color: var(--black-color);
+  border-radius: calc(var(--basic_size)*3);
+}
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: calc(var(--basic_size)*3) 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: var(--yellow-color);
+}
+.navbar .max-width-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: var(--white-color);
+    font-size: 35px;
+    font-weight: calc(var(--basic_font_weight)*6);
+}
+.navbar .logo a span{
+    color: var(--yellow-color);
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: var(--black-color);
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: calc(var(--basic_font_weight)*6);
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar.sticky .menu li a{
+  color: var(--black-color);
+}
+.navbar .menu li a:hover{
+    color: var(--yellow-color);
+}
+.navbar.sticky .menu li a:hover{
+    color: var(--white-color);
+}
+
+/* scroll-uo bytton styling */
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: calc(var(--basic_size)*3);
+    bottom: calc(var(--basic_size)*3);
+    text-align: center;
+    line-height: 45px;
+    color: var(--white-color);
+    z-index: 9999;
+    font-size: calc(var(--basic_size)*3);
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(150%);
+}
+
+/* title styling */
+.max_title{
+  font-size: var(--font_title_size);
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 25px;
+  color:  var(--yellow-color);
+  margin-top: calc(var(--basic_size)*12);
+}
+
+/* department styling */
+.department{
+  display: flex;
+  border: var(--yellow-color) var(--basic_size) solid;
+  border-radius: calc(var(--basic_size)*5);
+  padding-bottom: calc(var(--basic_size)*3);
+  margin-top: calc(var(--basic_size)*2);
+  margin-bottom: calc(var(--basic_size)*2);
+}
+
+/* left column styling */
+.department .columnn-left{
+  width: 50%;
+}
+.department .columnn-left img{
+  padding-left: calc(var(--basic_size)*2);
+  padding-top: calc(var(--basic_size)*2);
+}
+.department .column-right{
+  width: 50%;
+  padding-left: calc(var(--basic_size)*2);
+}
+.department .column-right .subtitle{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 28px;
+  font-family:monospace;
+  color:  var(--yellow-color);
+  margin-bottom: calc(var(--basic_size)*2);
+  margin-top: calc(var(--basic_size)*4);
+}
+.department .column-right .text{
+  color:  var(--yellow-color);
+  margin-top: 5px;
+}
+.department .column-right .areas{
+  margin-left: 25px;
+}
+.department .column-right .skills{
+  margin-left: 25px;
+}
+
+/* footer styling */
+footer{
+  background-color: var(--yellow-color);
+  font-weight: bold;
+  color: var(--black-color);
+}

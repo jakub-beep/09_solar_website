@@ -1,0 +1,19 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* variables */
+:root {
+  --yellow-color:  hsl(42 100% 56%);
+  --black-color: #111;
+  --white-color: #fff;
+  --basic_size: 10px;
+  --font_title_size: 44px;
+  --font_subtitle_size: 20px;
+  --basic_font_weight: 100;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}

@@ -94,6 +94,12 @@ section{
 .navbar.sticky .menu li a:hover{
     color: var(--white-color);
 }
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
 
 /* scroll-uo bytton styling */
 .scroll-up-btn{

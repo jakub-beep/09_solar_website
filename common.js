@@ -18,6 +18,7 @@ $(document).ready(function() {
       $('html').animate({scrollTop: 0});
       $('html').css("scrollBehavior", "auto");
   });
+
     // toggle menu/navbar script
   $('.menu-btn').click(function(){
       $('.navbar .menu').toggleClass("active");

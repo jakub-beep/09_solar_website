@@ -18,8 +18,9 @@ $(document).ready(function() {
       $('html').animate({scrollTop: 0});
       $('html').css("scrollBehavior", "auto");
   });
-
-  $('.navbar .menu li a').click(function() {
-    $('html').css("scrollBehavior", "smooth");
+    // toggle menu/navbar script
+  $('.menu-btn').click(function(){
+      $('.navbar .menu').toggleClass("active");
+      $('.menu-btn i').toggleClass("active");
   });
 });

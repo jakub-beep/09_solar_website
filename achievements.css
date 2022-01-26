@@ -1,11 +1,7 @@
-html {
-  font-size: calc(var(--basic_size)*2);
-  font-weight: calc(var(--basic_font_weight)*6);
-}
-
-/* all similar content styling codes */
 section {
   padding: calc(var(--basic_size)*5) 0;
+  font-size: calc(var(--basic_size)*2);
+  font-weight: calc(var(--basic_font_weight)*6);
 }
 
 .max-title {

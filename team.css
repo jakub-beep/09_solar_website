@@ -57,5 +57,20 @@ img {
 }
 
 footer {
+  border-top: 0;
   margin-top: calc(var(--basic_size)*30);
+  border-top: 0;
+}
+
+/* responsive styling */
+@media (max-width: 1100px) {
+  .column {
+    float: content;
+    width: 100%;
+    text-align: center;
+  }
+  footer{
+    height: 20px;
+    margin-top: 2200px;
+  };
 }

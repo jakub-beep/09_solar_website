@@ -14,14 +14,16 @@ $(document).ready(function() {
   });
 
   // slide-up script
-  $('.scroll-up-btn').click(function(){
-      $('html').animate({scrollTop: 0});
-      $('html').css("scrollBehavior", "auto");
+  $('.scroll-up-btn').click(function() {
+    $('html').animate({
+      scrollTop: 0
+    });
+    $('html').css("scrollBehavior", "auto");
   });
 
-    // toggle menu/navbar script
-  $('.menu-btn').click(function(){
-      $('.navbar .menu').toggleClass("active");
-      $('.menu-btn i').toggleClass("active");
+  // toggle menu/navbar script
+  $('.menu-btn').click(function() {
+    $('.navbar .menu').toggleClass("active");
+    $('.menu-btn i').toggleClass("active");
   });
 });

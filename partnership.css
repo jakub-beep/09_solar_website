@@ -122,7 +122,6 @@
   .cooperation .column-left {
     width: 100%;
     text-align: center;
-    display: block;
   }
 
   .cooperation .column-left img {
@@ -134,7 +133,6 @@
     margin-top: calc(var(--basic_size)*2);
     width: 100%;
     text-align: center;
-    display: block;
   }
 
   .cooperation .column-right .contact-information {

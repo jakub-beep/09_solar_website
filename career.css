@@ -1,40 +1,31 @@
 section {
   padding: calc(var(--basic_size)*18) 0;
+  margin: auto;
 }
 
 /* recruiment styling */
 .recruitment .main_part {
-  display: flex;
   padding-top: calc(var(--basic_size)*3);
 }
 
 .titles {
-  margin-left: auto;
-  margin-right: auto;
   margin-top: calc(var(--basic_size)*4);
 }
 
-.recruitment .titles ul li {
+.recruitment .main_part .titles ul li {
   position: relative;
   font-size: 25px;
   font-weight: calc(var(--basic_font_weight)*5);
   margin-bottom: 8px;
-  text-align: center;
+  text-align: left;
 }
 
-.recruitment .title span {
+.recruitment .titles ul li {
+  color: var(--white-color);
+}
+
+.recruitment .titles ul li span{
   color: var(--yellow-color);
-}
-
-.recruitment .photo_career_2 img {
-  display: block;
-  margin: auto;
-  margin-top: calc(var(--basic_size)*-21);
-}
-
-.recruitment .recruitment-content {
-  display: flex;
-  margin-top: calc(var(--basic_size)*10);
 }
 
 .recruitment .max_title {
@@ -51,29 +42,22 @@ section {
   font-size: calc(var(--basic_size)*2);
 }
 
-.recruitment .column-right {
-  width: 50%;
+.recruitment .max-width .recruitment-content {
+  display: flex;
+  margin-top: calc(var(--basic_size)*4);
 }
 
-.recruitment .column-left {
+.recruitment .recruitment-content .column-right, .recruitment .recruitment-content  .column-left  {
   width: 50%;
 }
 
 .recruitment .recruitment-content .column-left img {
   border-radius: 25px;
-  height: calc(var(--basic_size)*30);
-  width: calc(var(--basic_size)*40);
-  margin-left: calc(var(--basic_size)*7);
-  margin-top: calc(var(--basic_size)*4);
-}
-
-.recruitment .recruitment-content .column-right {
-  margin-top: calc(var(--basic_size)*6);
 }
 
 .recruitment .recruitment-content .column-right .title_2 {
-  margin-bottom: 15px;
-  margin-top: 15px;
+  font-size: calc(var(--basic_size)*2);
+  margin-bottom: var(--basic_size);
 }
 
 .recruitment .recruitment-content .column-right .title_2 a {
@@ -84,6 +68,7 @@ section {
   color: var(--white-color);
   margin-bottom: 8px;
   text-align: left;
+  font-size: calc(var(--basic_size)*2);
 }
 
 .recruitment .recruitment-content .column-right ul li span {
@@ -92,4 +77,24 @@ section {
 
 .recruitment .fa-ul li {
   color: var(--yellow-color);
+}
+
+/* responsive styling */
+@media (max-width: 1300px) {
+  .recruitment .max-width .recruitment-content {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+  .recruitment .max-width .recruitment-content .column-right{
+    width: 100%;
+    text-align: center;
+  }
+  .recruitment .max-width .recruitment-content .column-left{
+    width: 100%;
+    text-align: center;
+  }
+  .recruitment .recruitment-content .column-right ul li{
+    text-align: center;
+  }
 }

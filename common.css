@@ -24,6 +24,18 @@ html {
   color: var(--white-color);
 }
 
+body {
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: calc(var(--basic_size)*5);
+}
+
 .max-width {
   max-width: calc(var(--basic_size)*130);
   padding: 0 calc(var(--basic_size)*8);

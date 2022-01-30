@@ -1,15 +1,3 @@
-body {
-  min-height: 100vh;
-  margin: 0;
-  position: relative;
-}
-
-body::after {
-  content: '';
-  display: block;
-  height: calc(var(--basic_size)*5);
-}
-
 /* common for partners and cooperation */
 .max_title, .max_title_2 {
   font-size: var(--font_title_size);
@@ -59,7 +47,7 @@ body::after {
   background-color: var(--yellow-color);
   border-radius: calc(var(--basic_size)*2);
   margin-top: calc(var(--basic_size)*3);
-  margin-bottom:  calc(var(--basic_size)*3);
+  margin-bottom: calc(var(--basic_size)*3);
   text-align: center;
   font-weight: bolder;
   font-family: Ubuntu, sans-serif;
@@ -136,10 +124,11 @@ body::after {
     text-align: center;
     display: block;
   }
+
   .cooperation .column-left img {
     width: 80%;
     height: auto;
-}
+  }
 
   .cooperation .column-right {
     margin-top: calc(var(--basic_size)*2);
@@ -151,6 +140,7 @@ body::after {
   .cooperation .column-right .contact-information {
     text-align: center;
   }
+
   .partners .max-width {
     text-align: center;
     margin: auto;

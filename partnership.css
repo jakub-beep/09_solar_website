@@ -10,19 +10,27 @@ body::after {
   height: calc(var(--basic_size)*5);
 }
 
-section {
-  padding: calc(var(--basic_size)*12) 0;
+/* common for partners and cooperation */
+.max_title, .max_title_2 {
+  font-size: var(--font_title_size);
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: calc(var(--basic_size)*5);
+  color: var(--yellow-color);
 }
 
 /* cooperation styling */
 .cooperation {
   background-color: var(--black-color);
-  height: 850px;
+  padding-bottom: calc(var(--basic_size)*5);
+}
+
+.max_title {
+  padding-top: calc(var(--basic_size)*15);
 }
 
 .cooperation .max-width .cooperation-content {
   display: flex;
-  /* width: calc(var(--basic_size)*130); */
   width: auto;
 }
 
@@ -32,14 +40,13 @@ section {
 
 .cooperation .column-left img {
   border-radius: calc(var(--basic_size)*3);
-  margin-left: calc(var(--basic_size)*4);
 }
 
 .cooperation .column-right {
   width: 50%;
   margin-left: calc(var(--basic_size)*2);
   margin-top: calc(var(--basic_size)*12);
-  text-align: center;
+  text-align: left;
 }
 
 .cooperation .column-right .contact-information {
@@ -52,6 +59,7 @@ section {
   background-color: var(--yellow-color);
   border-radius: calc(var(--basic_size)*2);
   margin-top: calc(var(--basic_size)*3);
+  margin-bottom:  calc(var(--basic_size)*3);
   text-align: center;
   font-weight: bolder;
   font-family: Ubuntu, sans-serif;
@@ -76,28 +84,12 @@ section {
   background-color: var(--white-color);
 }
 
-.max_title, .max_title_2 {
-  font-size: var(--font_title_size);
-  text-align: center;
-  font-weight: bolder;
-  margin-bottom: calc(var(--basic_size)*5);
-  color: var(--yellow-color);
-}
-
-.max_title {
-  padding-top: calc(var(--basic_size)*15);
-}
-
 .max_title_2 {
   padding-top: calc(var(--basic_size)*5);
 }
 
 .partners table {
   border-spacing: var(--basic_size);
-}
-
-.partners table tr {
-  height: calc(var(--basic_size)*12);
 }
 
 .partners table td {
@@ -129,22 +121,38 @@ section {
 }
 
 /* responsive styling */
-@media (max-width: 1200px) {
-  .cooperation .max-width{
+@media (max-width: 1300px) {
+  .cooperation .max-width {
     text-align: center;
     margin: auto;
   }
+
   .cooperation .max-width .cooperation-content {
     display: block;
   }
+
   .cooperation .column-left {
     width: 100%;
     text-align: center;
-    display: flex;
+    display: block;
   }
+  .cooperation .column-left img {
+    width: 80%;
+    height: auto;
+}
+
   .cooperation .column-right {
+    margin-top: calc(var(--basic_size)*2);
     width: 100%;
     text-align: center;
-    display: flex;
+    display: block;
+  }
+
+  .cooperation .column-right .contact-information {
+    text-align: center;
+  }
+  .partners .max-width {
+    text-align: center;
+    margin: auto;
   }
 }

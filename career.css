@@ -89,3 +89,7 @@ section {
 .recruitment .recruitment-content .column-right ul li span {
   color: var(--yellow-color);
 }
+
+.recruitment .fa-ul li {
+  color: var(--yellow-color);
+}

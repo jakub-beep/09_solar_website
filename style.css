@@ -190,3 +190,23 @@ section .subtitle {
   padding-top: 28px;
   background: red dotted 3px;
 }
+
+.contact .contact-content .column-right .icons .row .fa-map-marker-alt {
+  padding-left: 4px;
+}
+
+.contact .contact-content .icons .row i {
+  font-size: 40px;
+}
+
+.contact .contact-content .column-left .icons .row i {
+  color: hsl(220, 46%, 48%);
+}
+
+.contact .contact-content .column-middle .icons .row i {
+  color: hsl(348, 83%, 47%);
+}
+
+.contact .contact-content .column-right .icons .row i {
+  color: hsl(131, 97%, 41%);
+}

@@ -2,8 +2,8 @@
 
 :root {
   --yellow-color: hsl(42 100% 56%);
-  --black-color: #111;
-  --white-color: #fff;
+  --black-color: hsl(0, 0%, 7%);
+  --white-color: hsl(0, 0%, 100%);
   --basic_size: 10px;
   --font_title_size: 44px;
   --font_subtitle_size: 20px;
@@ -40,7 +40,7 @@ html {
 }
 
 .menu-btn {
-  color: #fff;
+  color: var(--white-color);
   font-size: 23px;
   cursor: pointer;
   display: none;
@@ -162,6 +162,10 @@ footer {
   background-color: var(--yellow-color);
   font-weight: bold;
   color: var(--black-color);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
 }
 
 /* responsive styling */

@@ -1,3 +1,15 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: calc(var(--basic_size)*5);
+}
+
 section {
   padding: calc(var(--basic_size)*12) 0;
 }
@@ -10,7 +22,8 @@ section {
 
 .cooperation .max-width .cooperation-content {
   display: flex;
-  width: calc(var(--basic_size)*130);
+  /* width: calc(var(--basic_size)*130); */
+  width: auto;
 }
 
 .cooperation .column-left {
@@ -113,4 +126,25 @@ section {
 
 .partners .enel {
   padding-top: 5px;
+}
+
+/* responsive styling */
+@media (max-width: 1200px) {
+  .cooperation .max-width{
+    text-align: center;
+    margin: auto;
+  }
+  .cooperation .max-width .cooperation-content {
+    display: block;
+  }
+  .cooperation .column-left {
+    width: 100%;
+    text-align: center;
+    display: flex;
+  }
+  .cooperation .column-right {
+    width: 100%;
+    text-align: center;
+    display: flex;
+  }
 }

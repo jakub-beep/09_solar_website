@@ -61,12 +61,10 @@ section {
   border-collapse: separate;
   border-spacing: 0;
   text-align: center;
-  margin-left: calc(var(--basic_size)*13);
-  margin-right: calc(var(--basic_size)*13);
   font-weight: bold;
   font-size: 18px;
   height: calc(var(--basic_size)*40);
-  width: 80%;
+  width: 100%;
   ;
 }
 
@@ -106,4 +104,28 @@ table tr:last-child td:first-child {
 /* bottom-right border-radius */
 table tr:last-child td:last-child {
   border-bottom-right-radius: var(--basic_size);
+}
+
+/* responsive styling */
+@media (max-width: 1300px) {
+  .video video{
+    width: 100%;
+  }
+  .articles {
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
+  .articles a img{
+    width: 100%;
+  }
+  .articles .column-left{
+    width: 100%;
+  }
+  .articles .column-right{
+    width: 100%;
+  }
+  .podcasts table{
+    width: 100%;
+  }
 }

@@ -48,15 +48,11 @@ section {
   margin-left: var(--basic_size);
 }
 
-.slider a {
-  color: var(--black-color);
-}
-
 .slides {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  */ scroll-behavior: smooth;
+  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -195,4 +191,20 @@ table tr:last-child td:last-child {
   font-size: var(--font_subtitle_size);
   padding-bottom: calc(var(--basic_size)*2);
   margin-top: calc(var(--basic_size)*4);
+}
+
+/* responsive styling */
+@media (max-width: 1500px) {
+  .max-width{
+    display: block;
+  }
+  .max-width .column-left, .max-width .column-right{
+    width: 100%
+  }
+  .max-width .column-left .slider{
+    width: 100%
+  }
+  .slides>div{
+    width: 100%;
+  }
 }

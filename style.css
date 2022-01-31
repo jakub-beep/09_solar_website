@@ -210,3 +210,11 @@ section .subtitle {
 .contact .contact-content .column-right .icons .row i {
   color: hsl(131, 97%, 41%);
 }
+
+@media (max-width: 1300px) {
+  .home .home-content .text-1{
+    padding-top: calc(var(--basic_size)*10);
+  }
+  .home .max-width {
+  }
+}

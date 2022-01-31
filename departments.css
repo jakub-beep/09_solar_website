@@ -23,13 +23,14 @@ section {
 }
 
 /* left column styling */
-.department .columnn-left {
+.department .column-left {
   width: 50%;
 }
 
-.department .columnn-left img {
+.department .column-left img {
   padding-left: calc(var(--basic_size)*2);
   padding-top: calc(var(--basic_size)*2);
+  border-radius: calc(var(--basic_size)*5);
 }
 
 .department .column-right {
@@ -58,4 +59,25 @@ section {
 
 .department .column-right .skills {
   margin-left: 25px;
+}
+
+/* responsive styling */
+@media (max-width: 1300px) {
+  .department {
+    display: block;
+  }
+
+  .department .column-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .department .column-left img {
+    width: 80%;
+  }
+
+  .department .column-right {
+    width: 100%;
+    text-align: justify;
+  }
 }

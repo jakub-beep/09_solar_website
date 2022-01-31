@@ -96,5 +96,7 @@ section {
   }
   .recruitment .recruitment-content .column-right ul li{
     text-align: center;
+    display: flex;
+    margin-left: 30%;
   }
 }

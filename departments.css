@@ -22,7 +22,6 @@ section {
   margin-bottom: calc(var(--basic_size)*2);
 }
 
-/* left column styling */
 .department .column-left {
   width: 50%;
 }

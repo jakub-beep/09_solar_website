@@ -29,19 +29,19 @@ section {
 }
 
 .leader_board {
-  height: calc(var(--basic_size)*24);
+  display: flex;
   padding-top: var(--basic_size);
   margin-bottom: var(--basic_size);
 }
 
 .row {
-  height: calc(var(--basic_size)*21);
+  /* height: calc(var(--basic_size)*21); */
+  display: flex;
   padding-top: calc(var(--basic_size)*0.5);
   margin-bottom: calc(var(--basic_size)*3);
 }
 
 .column {
-  float: left;
   width: 20%;
   text-align: center;
 }
@@ -58,6 +58,14 @@ img {
 
 /* responsive styling */
 @media (max-width: 1100px) {
+  .leader_board{
+    display: block;
+    text-align: center;
+  }
+  .row{
+    display: block;
+    text-align: center;
+  }
   .column {
     float: content;
     width: 100%;

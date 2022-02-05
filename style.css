@@ -4,8 +4,7 @@ section {
 
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
-.contact .contact-content {
+.skills .skills-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -75,9 +74,8 @@ section .subtitle {
   font-weight: calc(var(--basic_font_weight)*5);
 }
 
+/*  about section styling */
 .about {
-  height: 820px;
-  min-height: 750px;
   background-color: hsl(215 100% 99%);
   color: var(--black-color);
 }
@@ -88,6 +86,7 @@ section .subtitle {
 
 .about .about-content {
   margin-top: calc(var(--basic_size)*-5);
+  display: flex;
 }
 
 .about .about-content .column-left {
@@ -95,11 +94,11 @@ section .subtitle {
   padding-top: calc(var(--basic_size)*7);
 }
 
-.about .about-content img {
+.about .about-content .column-left img {
   height: calc(var(--basic_size)*25);
   width: calc(var(--basic_size)*25);
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: calc(var(--basic_size)*2);
 }
 
 .about .about-content .column-right {
@@ -108,12 +107,12 @@ section .subtitle {
 
 .about .about-content .column-right .text {
   font-size: calc(var(--basic_size)*3);
-  font-weight: 600;
+  font-weight: calc(var(--basic_font_weight)*6);
   margin-bottom: var(--basic_size);
 }
 
 .about .about-content .column-right .text span {
-  color: hsl(38 100% 56%)
+  color: hsl(38 100% 56%);
 }
 
 .about .about-content .column-right p {
@@ -122,12 +121,6 @@ section .subtitle {
 }
 
 /* contact section styling */
-.contact {
-  background-color: var(--black-color);
-  color: var(--white-color);
-  min-height: calc(var(--basic_size)*75);
-}
-
 .contact .title {
   margin-top: calc(var(--basic_size)*-2);
 }
@@ -141,11 +134,11 @@ section .subtitle {
   font-size: calc(var(--basic_size)*2);
   font-weight: 300;
   margin-bottom: calc(var(--basic_size)*2);
-  text-align: left;
+  text-align: justify;
 }
 
 .contact .contact-content .column-left {
-  width: 34%;
+  width: 30%;
 }
 
 .contact .contact-content .column-middle {
@@ -163,8 +156,8 @@ section .subtitle {
 
 .contact .contact-content .row {
   display: flex;
-  height: calc(var(--basic_size)*8);
   align-items: center;
+  margin-top: calc(var(--basic_size)*2);
 }
 
 .contact .contact-content .row .info {
@@ -182,13 +175,6 @@ section .subtitle {
 
 .contact .contact-content .row .info a {
   color: var(--white-color);
-}
-
-.contact .contact-content .column-right .row .info .head_2 {
-  font-weight: 800;
-  color: var(--yellow-color);
-  padding-top: 28px;
-  background: red dotted 3px;
 }
 
 .contact .contact-content .column-right .icons .row .fa-map-marker-alt {
@@ -212,9 +198,35 @@ section .subtitle {
 }
 
 @media (max-width: 1300px) {
-  .home .home-content .text-1{
+  .home .home-content .text-1 {
     padding-top: calc(var(--basic_size)*10);
   }
-  .home .max-width {
+
+  .contact .contact-content {
+    display: block;
+    text-align: center;
+  }
+
+  .contact .contact-content .column-left,
+  .contact .contact-content .column-middle,
+  .contact .contact-content .column-right {
+    text-align: center;
+    width: 100%;
+    padding-left: 30%;
+  }
+
+  .contact .row {
+    text-align: justify;
+  }
+
+  .about .about-content {
+    display: block;
+    text-align: center;
+  }
+
+  .about .about-content .column-left,
+  .about .about-content .column-right {
+    width: 100%;
+    text-align: center;
   }
 }

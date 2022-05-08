@@ -32,3 +32,4 @@ It presents informations about team, career, cars, departmenrs of the team, cont
 <!-- STATUS -->
 # Status
 The project is still in the phase of development.
+Right now I am awaiting for new content and then I am gonna improve responsivity.

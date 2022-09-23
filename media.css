@@ -1,10 +1,10 @@
 section {
-  padding: calc(var(--basic_size)*12) 0;
+  padding: calc(var(--basic_size) * 12) 0;
 }
 
 .max-width {
-  max-width: calc(var(--basic_size)*150);
-  padding: 0 calc(var(--basic_size)*6);
+  max-width: calc(var(--basic_size) * 150);
+  padding: 0 calc(var(--basic_size) * 6);
   margin: auto;
 }
 
@@ -14,7 +14,7 @@ section {
   font-weight: bolder;
   margin-bottom: 25px;
   color: var(--yellow-color);
-  padding-top: calc(var(--basic_size)*5);
+  padding-top: calc(var(--basic_size) * 5);
 }
 
 .video {
@@ -22,22 +22,24 @@ section {
   padding-top: 12px;
 }
 
-.video video, .articles img {
-  border-radius: calc(var(--basic_size)*2);
+.video video,
+.articles img {
+  border-radius: calc(var(--basic_size) * 2);
 }
 
 .articles {
   display: flex;
 }
 
-.articles .column-left, .articles .column-right {
+.articles .column-left,
+.articles .column-right {
   width: 50%;
   text-align: center;
 }
 
 .title {
   padding-bottom: 15px;
-  padding-top: calc(var(--basic_size)*3);
+  padding-top: calc(var(--basic_size) * 3);
   font-size: 22px;
   font-weight: bold;
   text-align: center;
@@ -47,14 +49,15 @@ section {
   color: var(--yellow-color);
 }
 
-.articles .subtitle a, .video .subtitle {
+.articles .subtitle a,
+.video .subtitle {
   color: var(--yellow-color);
   font-size: 18px;
   font-weight: normal;
 }
 
 .podcasts {
-  padding-top: calc(var(--basic_size)*4);
+  padding-top: calc(var(--basic_size) * 4);
 }
 
 .podcasts .podcasts-table {
@@ -63,9 +66,8 @@ section {
   text-align: center;
   font-weight: bold;
   font-size: 18px;
-  height: calc(var(--basic_size)*40);
+  height: calc(var(--basic_size) * 40);
   width: 100%;
-  ;
 }
 
 table tr th,
@@ -108,7 +110,7 @@ table tr:last-child td:last-child {
 
 /* responsive styling */
 @media (max-width: 1300px) {
-  .video video{
+  .video video {
     width: 100%;
   }
   .articles {
@@ -116,16 +118,41 @@ table tr:last-child td:last-child {
     margin: auto;
     display: block;
   }
-  .articles a img{
+  .articles a img {
     width: 100%;
   }
-  .articles .column-left{
+  .articles .column-left {
     width: 100%;
   }
-  .articles .column-right{
+  .articles .column-right {
     width: 100%;
   }
-  .podcasts table{
+  .podcasts table {
     width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  audio {
+    max-width: 100px;
+  }
+}
+@media (max-width: 650px) {
+  table tr:first-child th:first-child {
+    border-top-left-radius: 0px;
+  }
+  table tr:last-child td:first-child {
+    border-bottom-left-radius: 0px;
+  }
+
+  #station {
+    display: None;
+  }
+  #date {
+    display: None;
+  }
+}
+@media (max-width: 400px) {
+  table {
+    margin-left: -10% !important;
   }
 }

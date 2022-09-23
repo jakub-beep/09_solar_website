@@ -10,6 +10,14 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://kit.fontawesome.com/6d35b3baad.js" crossorigin="anonymous"></script>
   <script src="common.js"></script>
+  <script src="functions/add_nav_links.js"></script>
+  <script src="functions/add_navbar.js"></script>
+  <script src="functions/add_parrameter.js"></script>
+  <script src="functions/add_slide.js"></script>
+  <script type="text/javascript" src="./languages/en.js"></script>
+  <script type="text/javascript" src="./languages/pl.js"></script>
+  <script src="functions/translate.js"></script>
+
 </head>
 
 <body>
@@ -17,229 +25,77 @@
     <i class="fas fa-angle-up"></i>
   </div>
 
-  <nav class="navbar">
-    <div class="max-width-navbar">
-      <div class="logo"><a href="#"><span>SOLAR</span>DYNAMICS</a></div>
-      <ul class="menu">
-        <li><a href="index.html" class="menu-btn">Home</a></li>
-        <li><a href="team.html" class="menu-btn">Team</a></li>
-        <li><a href="#" class="menu-btn">Cars</a></li>
-        <li><a href="departments.html" class="menu-btn">Departments</a></li>
-        <li><a href="achievements.html" class="menu-btn">Achievements</a></li>
-        <li><a href="career.html" class="menu-btn">Career</a></li>
-        <li><a href="media.html" class="menu-btn">Media</a></li>
-        <li><a href="partnership.html" class="menu-btn">Partnership</a></li>
-        <li><a href="index.html#contact" class="menu-btn">Contact</a></li>
-      </ul>
-      <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-  </nav>
+  <nav class="navbar" id="navbar"></nav>
 
   <section class="cars">
     <div class="Klara">
       <div class="title">KLARA</div>
+      <div class="subtitle"><span class="lang" accesskey="old_project"></span></div>
       <div class="max-width">
         <div class="column-left">
           <div class="slider">
-            <div class="slides">
-              <div id="slide-1">
-                <img src="images/cars_3.jpg" alt="Klara solar car - iLumen 2021">
-              </div>
-              <div id="slide-2">
-                <img src="images/cars_2.png" alt="Klara solar car - workshop of PUT SOLAR DYNAMICS">
-              </div>
-              <div id="slide-3">
-                <img src="images/cars_4.jpg" alt="Klara solar car with the team - iLumen 2021">
-              </div>
-              <div id="slide-4">
-                <img src="images/cars_9.png" alt="Klara solar car - rear view - campus of Poznan University of Technology">
-              </div>
-              <div id="slide-5">
-                <img src="images/cars_6.png" alt="Klara solar car - visualization - front isometric view">
-              </div>
-              <div id="slide-5">
-                <img src="images/cars_7.png" alt="Klara solar car - visualization - back isometric view">
-              </div>
-              <div id="slide-5">
-                <img src="images/cars_8.png" alt="Klara solar car - technical drawing">
-              </div>
-            </div>
+            <div class="slides" id="klara_slides"></div>
           </div>
         </div>
+
         <div class="column-right">
-          <table class="parameters">
+          <table class="parameters" id="parameters_klara">
             <tr>
-              <th>Parameters</th>
-              <th>Value</th>
-            </tr>
-            <tr>
-              <td class="left">Height [mm]</td>
-              <td class="right">1160</td>
-            </tr>
-            <tr>
-              <td class="left">Width [mm]</td>
-              <td class="right">2000</td>
-            </tr>
-            <tr>
-              <td class="left">Length [mm]</td>
-              <td class="right">4500</td>
-            </tr>
-            <tr>
-              <td class="left">Track [mm]</td>
-              <td class="right">1500</td>
-            </tr>
-            <tr>
-              <td class="left">Wheel base [mm]</td>
-              <td class="right">2700</td>
-            </tr>
-            <tr>
-              <td class="left">Maximal speed [km/h]</td>
-              <td class="right">85</td>
-            </tr>
-            <tr>
-              <td class="left">Turning radius [m]</td>
-              <td class="right">8</td>
-            </tr>
-            <tr>
-              <td class="left">Ground Clearence [mm]</td>
-              <td class="right">115</td>
-            </tr>
-            <tr>
-              <td class="left">Weight [kg]</td>
-              <td class="right">750</td>
-            </tr>
-            <tr>
-              <td class="left">Cx coefficient</td>
-              <td class="right">0.17</td>
-            </tr>
-            <tr>
-              <td class="left">Suspension</td>
-              <td class="right">Double wishbone</td>
-            </tr>
-            <tr>
-              <td class="left">Motors</td>
-              <td class="right">2 BLDC in hubs</td>
-            </tr>
-            <tr>
-              <td class="left">Roll Cage</td>
-              <td class="right">25CrMo4 stel</td>
-            </tr>
-            <tr>
-              <td class="left">Body</td>
-              <td class="right">Carbon laminates</td>
-            </tr>
-            <tr>
-              <td class="left">Seats</td>
-              <td class="right">2</td>
+              <th><span class="lang" accesskey="parameters"></span></th>
+              <th><span class="lang" accesskey="value"></span></th>
             </tr>
           </table>
         </div>
       </div>
     </div>
-    <!-- <div class="Wacław">
+
+    <div class="Wacław">
       <div class="title">WACŁAW</div>
-      <div class="subtitle">Our new project still in the phase of projecting
-        but we can already reveal some sassy details!</div>
+      <div class="subtitle"><span class="lang" accesskey="new_project"></span></div>
       <div class="max-width">
         <div class="column-left">
           <div class="slider">
-            <div class="slides">
-              <div id="slide-1">
-                <img src="images/cars_11.png" alt="Vaclav solar car visualization - isometric view">
-              </div>
-              <div id="slide-2">
-                <img src="images/cars_12.png" alt="Vaclav solar car visualization - side view">
-              </div>
-              <div id="slide-3">
-                <img src="images/car_13.png" alt="Vaclav solar car visualization - rear left view">
-              </div>
-              <div id="slide-4">
-                <img src="images/car_14.png" alt="Vaclav solar car visualization - side rear view">
-              </div>
-              <div id="slide-4">
-                <img src="images/cars_10.png" alt="Vaclav solar car visualization - top view">
-              </div>
-            </div>
+            <div class="slides" id="vaclav_slides"></div>
           </div>
         </div>
+
         <div class="column-right">
-          <table class="parameters">
+          <table class="parameters" id="parameters_vaclav">
             <tr>
-              <th>Parameters</th>
-              <th>Value</th>
-            </tr>
-            <tr>
-              <td class="left">Height [mm]</td>
-              <td class="right">TBA</td>
-            </tr>
-            <tr>
-              <td class="left">Width [mm]</td>
-              <td class="right">TBA</td>
-            </tr>
-            <tr>
-              <td class="left">Length [mm]</td>
-              <td class="right">4200</td>
-            </tr>
-            <tr>
-              <td class="left">Track [mm]</td>
-              <td class="right">1500</td>
-            </tr>
-            <tr>
-              <td class="left">Wheel base [mm]</td>
-              <td class="right">2700</td>
-            </tr>
-            <tr>
-              <td class="left">Maximal speed [km/h]</td>
-              <td class="right">TBA</td>
-            </tr>
-            <tr>
-              <td class="left">Turning radius [m]</td>
-              <td class="right">TBA</td>
-            </tr>
-            <tr>
-              <td class="left">Ground Clearence [mm]</td>
-              <td class="right">TBA</td>
-            </tr>
-            <tr>
-              <td class="left">Weight [kg]</td>
-              <td class="right">TBA</td>
-            </tr>
-            <tr>
-              <td class="left">Cx coefficient</td>
-              <td class="right">TBA</td>
-            </tr>
-            <tr>
-              <td class="left">Suspension</td>
-              <td class="right">Double wishbone</td>
-            </tr>
-            <tr>
-              <td class="left">Engines</td>
-              <td class="right">1</td>
-            </tr>
-            <tr>
-              <td class="left">Roll Cage</td>
-              <td class="right">25CrMo4 stel</td>
-            </tr>
-            <tr>
-              <td class="left">Body</td>
-              <td class="right">Carbon laminates</td>
-            </tr>
-            <tr>
-              <td class="left">Seats</td>
-              <td class="right">4</td>
+              <th><span class="lang" accesskey="parameters"></span></th>
+              <th><span class="lang" accesskey="value"></span></th>
             </tr>
           </table>
         </div>
       </div>
-    </div> -->
+    </div>
 
   </section>
 
   <footer>
-    <span>Created By <a href="https://www.linkedin.com/in/jakub-wytykowski/">Jakub Wytykowski</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+    <span>Created By <a href="https://www.linkedin.com/in/jakub-wytykowski/">Jakub Wytykowski</a> | <span
+        class="far fa-copyright"></span> 2021 All rights reserved.</span>
   </footer>
 </body>
+
+<script>
+  if (localStorage.getItem("lng") === null) {
+    localStorage.setItem("lng", 'en');
+  }
+  var arrLang = {
+    en,
+    pl,
+  };
+  const lang = localStorage.getItem("lng");
+
+  add_navbar();
+  add_nav_links();
+  add_slides();
+  add_parameters();
+
+  translate_refresh();
+  translate_button();
+</script>
+
 
 </html>

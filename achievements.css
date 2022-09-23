@@ -1,21 +1,27 @@
 section {
-  padding: calc(var(--basic_size)*5) 0;
-  font-size: calc(var(--basic_size)*2);
-  font-weight: calc(var(--basic_font_weight)*6);
+  padding: calc(var(--basic_size) * 5) 0;
+  font-size: calc(var(--basic_size) * 2);
+  font-weight: calc(var(--basic_font_weight) * 6);
 }
 
 .max-title {
   font-size: var(--font_title_size);
   font-weight: bolder;
-  padding-top: calc(var(--basic_size)*15);
+  padding-top: calc(var(--basic_size) * 15);
   text-align: center;
   color: var(--yellow-color);
 }
 
 table {
+  border: red 3px dashed;
   border-collapse: separate;
   border-spacing: 0;
   text-align: center;
+}
+@media (max-width: 450px) {
+  table {
+    margin-left: -80px !important;
+  }
 }
 
 table tr th,
@@ -55,13 +61,13 @@ table tr:last-child td:last-child {
 }
 
 .achievements table tr .first {
-  width: calc(var(--basic_size)*15);
+  width: calc(var(--basic_size) * 15);
 }
 
 .achievements table tr .second {
-  width: calc(var(--basic_size)*110);
+  width: calc(var(--basic_size) * 110);
 }
 
 .achievements table tr .third {
-  width: calc(var(--basic_size)*10);
+  width: calc(var(--basic_size) * 10);
 }

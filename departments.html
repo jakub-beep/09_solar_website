@@ -10,6 +10,13 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://kit.fontawesome.com/6d35b3baad.js" crossorigin="anonymous"></script>
   <script src="common.js"></script>
+  <script src="functions/add_nav_links.js"></script>
+  <script src="functions/add_navbar.js"></script>
+  <script src="functions/add_column_rght.js"></script>
+  <script type="text/javascript" src="./languages/en.js"></script>
+  <script type="text/javascript" src="./languages/pl.js"></script>
+  <script src="functions/translate.js"></script>
+
 </head>
 
 <body>
@@ -17,151 +24,48 @@
     <i class="fas fa-angle-up"></i>
   </div>
 
-  <nav class="navbar">
-    <div class="max-width-navbar">
-      <div class="logo"><a href="#"><span>SOLAR</span>DYNAMICS</a></div>
-      <ul class="menu">
-        <li><a href="index.html" class="menu-btn">Home</a></li>
-        <li><a href="team.html" class="menu-btn">Team</a></li>
-        <li><a href="cars.html" class="menu-btn">Cars</a></li>
-        <li><a href="departments.html" class="menu-btn">Departments</a></li>
-        <li><a href="achievements.html" class="menu-btn">Achievements</a></li>
-        <li><a href="career.html" class="menu-btn">Career</a></li>
-        <li><a href="media.html" class="menu-btn">Media</a></li>
-        <li><a href="partnership.html" class="menu-btn">Partnership</a></li>
-        <li><a href="index.html#contact" class="menu-btn">Contact</a></li>
-      </ul>
-      <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-  </nav>
+  <nav class="navbar" id="navbar"></nav>
 
   <section>
     <div class="max-width">
-      <div class="max_title">Our departments</div>
-      <div class="department">
-        <div class="column-left">
-          <img src="images/departments_15.png" alt="PUT SOLAR member performing CFD simulations">
-        </div>
-        <div class="column-right">
-          <div class="subtitle">Car body & Aero</div>
-          <div class="text">The aero department handles the following areas:</div>
-          <ul class="areas">
-            <li>Designing and manufacturing body of the car;</li>
-            <li>Passenger ergonomics design;</li>
-            <li>Aerodynamics, strength of materials and weight optimization calculations;</li>
-            <li>Designing and manufacturing of composites;</li>
-            <li>Rapid prototyping.</li>
-          </ul>
-          <div class="text">The team's abilities</div>
-          <ul class="skills">
-            <li>CAD designing, technical drawing (CATIA V6, SW);</li>
-            <li>CFD and FEA calculations (Altair Hyperworks, Ansys);</li>
-            <li>Lamination mould desinging and manufacturing;</li>
-            <li>Selection of materials, glues, fibers and resins;</li>
-            <li>CNC machining, lamination, general workshop skills.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="department">
-        <div class="column-left">
-          <img src="images/departments_1.png" alt="PUT SOLAR member with a wrench">
-        </div>
-        <div class="column-right">
-          <div class="subtitle">Suspension</div>
-          <div class="text">The aerodynamics department handles the following areas:</div>
-          <ul class="areas">
-            <li>Desingning and manufacturing suspension of the car;</li>
-            <li>Vehicle dynamics and kinematics design;</li>
-            <li>Vehicle structure design;</li>
-            <li>Calculation of the strength of the car;</li>
-            <li>General workshop operations.</li>
-          </ul>
-          <div class="text">The team's abilities</div>
-          <ul class="skills">
-            <li>CAD designing in SW environment;</li>
-            <li>FEA calculations in SW SIULATION & PrePoMax;</li>
-            <li>Kinematics and dynamics simulations in ADAMS environment;</li>
-            <li>CNC machining, lamination, welding, gneral workshop skills.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="department">
-        <div class="column-left">
-          <img src="images/departments_11.png" alt="PUT SOLAR member during electric work">
-        </div>
-        <div class="column-right">
-          <div class="subtitle">Electrician</div>
-          <div class="text">The electrician department handles the following areas:</div>
-          <ul class="areas">
-            <li>Design and selection of the drive engine unit;</li>
-            <li>Telemetry design;</li>
-            <li>Battery design;</li>
-            <li>Electricity consumption management;</li>
-            <li>Connecting wires and electrical components.</li>
-          </ul>
-          <div class="text">The team's abilities</div>
-          <ul class="skills">
-            <li>Spot welding, soldering, circuit bonding;</li>
-            <li>Electrical circuit design;</li>
-            <li>Kinematics and dynamics simulations in ADAMS environment;</li>
-            <li>CNC machining, lamination, general workshop skills.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="department">
-        <div class="column-left">
-          <img src="images/departaments_9.png" alt="PUT SOLAR member during marketing work">
-        </div>
-        <div class="column-right">
-          <div class="subtitle">Marketing</div>
-          <div class="text">The marketing department handles the following areas:</div>
-          <ul class="areas">
-            <li>Socail media management;</li>
-            <li>Contact and negotiations with our partners;</li>
-            <li>Determining marketing strategy;</li>
-            <li>Event organization;</li>
-            <li>Fundraising, handling financial matters.</li>
-          </ul>
-          <div class="text">The team's abilities</div>
-          <ul class="skills">
-            <li>CANVA, Corel, GIMP, Photoshop</li>
-            <li>Invoice settlement, forms filing;</li>
-            <li>Soft skills, negotiation skills;</li>
-            <li>Brand making skills.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="department">
-        <div class="column-left">
-          <img src="images/departaments_5.png" alt="PUT SOLAR member during electronics work">
-        </div>
-        <div class="column-right">
-          <div class="subtitle">Electronics</div>
-          <div class="text">The electrician department handles the following areas:</div>
-          <ul class="areas">
-            <li>Controller Area Network (CAN);</li>
-            <li>Battery Management System (BMS);</li>
-            <li>Anti-lock Braking System (ABS);</li>
-            <li>IT - Databases and IoT.</li>
-            <li>MPPT, Inverters, Dashboard and others;</li>
-          </ul>
-          <div class="text">The team's abilities</div>
-          <ul class="skills">
-            <li>Embedded systems programming;</li>
-            <li>PCB board design;</li>
-            <li>Data Science</li>
-            <li>Spot welding, soldering, circuit bonding;</li>
-          </ul>
-        </div>
-      </div>
+      <div class="max_title"><span class='lang' accesskey="our_departaments"></span></div>
+      <div class="department" id="department_aero"></div>
+      <div class="department" id="department_susp"></div>
+      <div class="department" id="department_electr"></div>
+      <div class="department" id="department_mark"></div>
+      <div class="department" id="department_emb"></div>
     </div>
   </section>
 
   <footer>
-    <span>Created By <a href="https://www.linkedin.com/in/jakub-wytykowski/">Jakub Wytykowski</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+    <span>Created By <a href="https://www.linkedin.com/in/jakub-wytykowski/">Jakub Wytykowski</a> | <span
+        class="far fa-copyright"></span> 2021 All rights reserved.</span>
   </footer>
 </body>
+
+<script>
+  if (localStorage.getItem("lng") === null) {
+    localStorage.setItem("lng", 'en');
+  }
+  var arrLang = {
+    en,
+    pl,
+  };
+  const lang = localStorage.getItem("lng");
+
+  add_columns('aero')
+  add_columns('susp')
+  add_columns('electr')
+  add_columns('mark')
+  add_columns('emb')
+
+  add_navbar();
+  add_nav_links();
+
+  translate_refresh();
+  translate_button();
+
+</script>
+
 
 </html>

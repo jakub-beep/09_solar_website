@@ -2,14 +2,21 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Partnership</title>
-  <link rel="stylesheet" href="common.css">
-  <link rel="stylesheet" href="partnership.css">
+  <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="partnership.css" />
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://kit.fontawesome.com/6d35b3baad.js" crossorigin="anonymous"></script>
   <script src="common.js"></script>
+  <script src="functions/add_nav_links.js"></script>
+  <script src="functions/add_navbar.js"></script>
+  <script src="functions/add_partner.js"></script>
+  <script src="functions/add_row_partners.js"></script>
+  <script src="functions/translate.js"></script>
+  <script type="text/javascript" src="./languages/en.js"></script>
+  <script type="text/javascript" src="./languages/pl.js"></script>
 </head>
 
 <body>
@@ -17,97 +24,99 @@
     <i class="fas fa-angle-up"></i>
   </div>
 
-  <nav class="navbar">
-    <div class="max-width-navbar">
-      <div class="logo"><a href="#"><span>SOLAR</span>DYNAMICS</a></div>
-      <ul class="menu">
-        <li><a href="index.html" class="menu-btn">Home</a></li>
-        <li><a href="team.html" class="menu-btn">Team</a></li>
-        <li><a href="cars.html" class="menu-btn">Cars</a></li>
-        <li><a href="departments.html" class="menu-btn">Departments</a></li>
-        <li><a href="achievements.html" class="menu-btn">Achievements</a></li>
-        <li><a href="career.html" class="menu-btn">Career</a></li>
-        <li><a href="media.html" class="menu-btn">Media</a></li>
-        <li><a href="#" class="menu-btn">Partnership</a></li>
-        <li><a href="index.html#contact" class="menu-btn">Contact</a></li>
-      </ul>
-      <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-  </nav>
+  <nav class="navbar" id="navbar"></nav>
 
   <div class="cooperation">
     <div class="max-width">
-      <div class="max_title">Would you like to join our cause?</div>
+      <div class="max_title">
+        <span class="lang" accesskey="cause"></span>
+      </div>
       <div class="cooperation-content">
-        <div class="column-left">
-          <img class="partnership" src="images/partnership.png" alt="handshake">
+        <div class="contact-information">
+          <span class="lang" accesskey="become_partner"></span>
+          <span><a href="index.html#contact"><span class="lang" accesskey="here"></span></a></span>
+          <span class="lang" accesskey="to_contact"></span>
         </div>
-        <div class="column-right">
-          <div class="contact-information">
-            Wanna know more and become our partner? Do not hesitate and hop in <span><a href="index.html#contact">here</a></span> to contact us.
-          </div>
-          <div class="button">
-            <a href="index.html#contact"><button type="button" name="button">Contact</button></a>
-          </div>
+        <div class="button">
+          <a href="index.html#contact"><button type="button" name="button">
+              <span class="lang" accesskey="contact"></span></button></a>
         </div>
       </div>
     </div>
   </div>
   <div class="partners">
     <div class="max-width">
-      <div class="max_title_2">Together we make this adventure possible!</div>
-      <table>
-        <tr>
-          <a href="#"></a>
-          <td><a href="http://boomdruk.com.pl/"><img class="boomdruk" src="images/partners_1.png" alt="boomdruk logo"></img></a< /td>
-          <td><a href="https://www.bosbank.pl/klient-indywidualny"><img class="boś_bank" src="images/partners_2.png" alt="bosbank logo"></img></a< /td>
-          <td><a href="https://columbusenergy.pl/"><img class="columbus" src="images/partners_3.png" alt="columbusenergy logo"></img></a< /td>
-          <td><a href="https://csi.pl/"><img class="csi" src="images/partners_4.png" alt="csi logo"></img></a< /td>
-        </tr>
-        <tr>
-          <td><a href="https://pl.farnell.com/"><img class="farnell" src="images/partners_5.png" alt="farnell logo"></img></a< /td>
-          <td><a href="https://www.ansys.com/"><img class="ansys" src="images/partners_8.png" alt="ansys logo"></img></a< /td>
-          <td><a href="https://www.pragmatiq.pl/"><img class="pragmatiq" src="images/partners_14.png" alt="pragmatiq logo"></img></a< /td>
-          <td><a href="https://www.igus.pl/"><img class="igus" src="images/partners_33.png" alt="IGUS logo"></img></a< /td>
-        </tr>
-        <tr>
-          <td><a href="https://mesco.com.pl/"><img class="mesco" src="images/partners_9.png" alt="boomdruk logo"></img></a< /td>
-          <td><a href="http://www.modelart.com.pl/"><img class="model-art" src="images/partners_10.png" alt="boomdruk logo"></img></a< /td>
-          <td><a href="https://omni3d.com/pl/"><img class="omni3d" src="images/partners_11.png" alt="boomdruk logo"></img></a< /td>
-          <td><a href="https://www.poznan.pl/"><img class="poznan" src="images/partners_24.png" alt="poznan logo"></img></a< /td>
-        </tr>
-        <tr>
-          <td><a href="https://www.hoffmann-group.com/PL/pl/perp/"><img class="hoffman" src="images/partners_13.png" alt="hoffmann-group logo"></img></a< /td>
-          <td><a href="https://www.solbian.eu/en/"><img class="solbian" src="images/partners_15.png" alt="solbian logo"></img></a< /td>
-          <td><a href="https://up-board.org/"><img class="up" src="images/partners_16.png" alt="up-board logo"></img></a< /td>
-          <td><a href="https://www.facebook.com/SchefflerOfficial/"><img class="scheffler" src="images/partners_21.png" alt="Scheffler logo"></img></a< /td>
-        <tr>
-          <td><a href="https://kisielewski.pl/"><img class="kisielewski" src="images/partners_6.png" alt="kisielewski logo"></img></a< /td>
-          <td><a href="http://www.batimex.pl/"><img class="batimex" src="images/partners_22.png" alt="batimex logo"></img></a< /td>
-          <td><a href="https://yato.com/"><img class="yato" src="images/partners_17.png" alt="yato logo"></img></a< /td>
-          <td><a href="https://itswrap.pl/"><img class="wrap" src="images/partners_23.png" alt="itswrap logo"></img></a< /td>
-        </tr>
-        <tr>
-          <td><a href="http://evitron.pl/"><img class="evitron" src="images/partners_7.png" alt="evitron logo"></img></a< /td>
-          <td><a href="https://rosa3d.pl/en/"><img class="rosa" src="images/partners_28.png" alt="rosa3d logo"></img></a< /td>
-          <td><a href="https://enelwroc.pl/"><img class="enel" src="images/partners_18.png" alt="enelwroc logo"></img></a< /td>
-          <td><a href="https://extremehobby.eu/en/"><img class="hobby" src="images/partners_19.png" alt="extremehobby logo"></img></a< /td>
-        </tr>
-        <tr>
-          <td><a href="https://www.altair.com.pl/"><img class="altair" src="images/partners_29.png" alt="altair logo"></img></a< /td>
-          <td><a href="https://www.put.poznan.pl/"><img class="politechnika" src="images/partners_25.png" alt="PUT logo"></img></a< /td>
-          <td><a href="https://www.dmef.put.poznan.pl/"><img class="wim" src="images/partners_26.png" alt="WIM logo"></img></a< /td>
-          <td><a href="https://fee.put.poznan.pl/"><img class="warie" src="images/partners_27.png" alt="WARiE logo"></img></a< /td>
-        </tr>
-      </table>
+      <div class="max_title_2">
+        <span class="lang" accesskey="together"></span>
+      </div>
+      <table id="partners"></table>
     </div>
   </div>
 
   <footer>
-    <span>Created By <a href="https://www.linkedin.com/in/jakub-wytykowski/">Jakub Wytykowski</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+    <span>Created By
+      <a href="https://www.linkedin.com/in/jakub-wytykowski/">Jakub Wytykowski</a>
+      | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
   </footer>
+  <script>
+    if (localStorage.getItem("lng") === null) {
+      localStorage.setItem("lng", "en");
+    }
+    var arrLang = {
+      en,
+      pl,
+    };
+
+    const lang = localStorage.getItem("lng");
+
+    add_row_partners(
+      add_partner("http://boomdruk.com.pl/", "boomdruk"),
+      add_partner("https://www.bosbank.pl/klient-indywidualny", "bos_bank"),
+      add_partner("https://columbusenergy.pl/", "columbus"),
+      add_partner("https://csi.pl/", "csi")
+    );
+    add_row_partners(
+      add_partner("https://pl.farnell.com/", "farnell"),
+      add_partner("https://www.ansys.com/", "ansys"),
+      add_partner("https://www.pragmatiq.pl/", "pragmatiq"),
+      add_partner("https://www.igus.pl/", "igus")
+    );
+    add_row_partners(
+      add_partner("https://mesco.com.pl/", "mesco"),
+      add_partner("http://www.modelart.com.pl/", "model_art"),
+      add_partner("https://omni3d.com/pl/", "omni3d"),
+      add_partner("https://www.poznan.pl/", "poznan")
+    );
+    add_row_partners(
+      add_partner("https://www.hoffmann-group.com/PL/pl/perp/", "hoffmann"),
+      add_partner("https://www.solbian.eu/en/", "solbian"),
+      add_partner("https://up-board.org/", "up_board"),
+      add_partner("https://www.facebook.com/SchefflerOfficial/", "scheffler")
+    );
+    add_row_partners(
+      add_partner("https://kisielewski.pl/", "kisielewski"),
+      add_partner("http://www.batimex.pl/", "batimex"),
+      add_partner("https://yato.com/", "yato"),
+      add_partner("https://itswrap.pl/", "its_wrap")
+    );
+    add_row_partners(
+      add_partner("http://evitron.pl/", "evitron"),
+      add_partner("https://rosa3d.pl/en", "rosa"),
+      add_partner("https://enelwroc.pl/", "enel"),
+      add_partner("https://extremehobby.eu/en/", "extreme_hobby")
+    );
+    add_row_partners(
+      add_partner("https://www.altair.com.pl/", "altair"),
+      add_partner("https://www.put.poznan.pl/", "put"),
+      add_partner("https://www.dmef.put.poznan.pl/", "wim"),
+      add_partner("https://fee.put.poznan.pl/", "warie")
+    );
+
+    add_navbar();
+    add_nav_links();
+    translate_refresh();
+    translate_button();
+  </script>
 </body>
 
 </html>

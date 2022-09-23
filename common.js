@@ -1,29 +1,31 @@
 // section controlling appearing navbar sticky and button to scroll
-$(document).ready(function() {
-  $(window).scroll(function() {
+$(document).ready(function () {
+  $(window).scroll(function () {
     if (this.scrollY > 20) {
-      $('.navbar').addClass("sticky");
+      $(".navbar").addClass("sticky");
     } else {
-      $('.navbar').removeClass("sticky");
+      $(".navbar").removeClass("sticky");
     }
     if (this.scrollY > 20) {
-      $('.scroll-up-btn').addClass("show");
+      $(".scroll-up-btn").addClass("show");
+      $(".lng-buttons").addClass("hide");
     } else {
-      $('.scroll-up-btn').removeClass("show");
+      $(".scroll-up-btn").removeClass("show");
+      $(".lng-buttons").removeClass("hide");
     }
   });
 
   // slide-up script
-  $('.scroll-up-btn').click(function() {
-    $('html').animate({
-      scrollTop: 0
+  $(".scroll-up-btn").click(function () {
+    $("html").animate({
+      scrollTop: 0,
     });
-    $('html').css("scrollBehavior", "auto");
+    $("html").css("scrollBehavior", "auto");
   });
 
   // toggle menu/navbar script
-  $('.menu-btn').click(function() {
-    $('.navbar .menu').toggleClass("active");
-    $('.menu-btn i').toggleClass("active");
+  $(".menu-btn").click(function () {
+    $(".navbar .menu").toggleClass("active");
+    $(".menu-btn i").toggleClass("active");
   });
 });

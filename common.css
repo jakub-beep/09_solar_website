@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
 :root {
   --yellow-color: hsl(42 100% 56%);
@@ -19,7 +19,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--black-color);
   color: var(--white-color);
 }
@@ -31,19 +31,19 @@ body {
 }
 
 body::after {
-  content: '';
+  content: "";
   display: block;
-  height: calc(var(--basic_size)*5);
+  height: calc(var(--basic_size) * 5);
 }
 
 .max-width {
-  max-width: calc(var(--basic_size)*130);
-  padding: 0 calc(var(--basic_size)*8);
+  max-width: calc(var(--basic_size) * 130);
+  padding: 0 calc(var(--basic_size) * 8);
   margin: auto;
 }
 
 .max-width-navbar {
-  max-width: calc(var(--basic_size)*130);
+  max-width: calc(var(--basic_size) * 130);
   padding: 0 0px;
   margin: auto;
   display: flex;
@@ -70,7 +70,7 @@ body::after {
 ::-webkit-scrollbar-thumb {
   background: var(--yellow-color);
   border: 2px solid var(--white-color);
-  border-radius: calc(var(--basic_size)*2);
+  border-radius: calc(var(--basic_size) * 2);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -78,9 +78,9 @@ body::after {
 }
 
 ::-webkit-scrollbar-button {
-  border: calc(var(--basic_size)*3) solid var(--white-color);
+  border: calc(var(--basic_size) * 3) solid var(--white-color);
   background-color: var(--black-color);
-  border-radius: calc(var(--basic_size)*3);
+  border-radius: calc(var(--basic_size) * 3);
 }
 
 /* navbar styling */
@@ -88,20 +88,20 @@ body::after {
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding: calc(var(--basic_size)*3) 0;
-  font-family: 'Ubuntu', sans-serif;
+  padding: calc(var(--basic_size) * 3) 0;
+  font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
 }
 
 .navbar.sticky {
-  padding: calc(var(--basic_size)*1.5) 0;
+  padding: calc(var(--basic_size) * 1.5) 0;
   background: var(--yellow-color);
 }
 
 .navbar .logo a {
   color: var(--white-color);
-  font-size: calc(var(--basic_size)*3.5);
-  font-weight: calc(var(--basic_font_weight)*6);
+  font-size: calc(var(--basic_size) * 3.5);
+  font-weight: calc(var(--basic_font_weight) * 6);
 }
 
 .navbar .logo a span {
@@ -112,7 +112,9 @@ body::after {
 .navbar.sticky .logo a span {
   color: var(--black-color);
 }
-
+.navbar .menu {
+  margin-right: 32px;
+}
 .navbar .menu li {
   list-style: none;
   display: inline-block;
@@ -122,21 +124,40 @@ body::after {
   display: block;
   color: var(--white-color);
   font-size: 18px;
-  font-weight: calc(var(--basic_font_weight)*5);
+  font-weight: calc(var(--basic_font_weight) * 5);
   margin-left: 25px;
   transition: color 0.3s ease;
-}
-
-.navbar.sticky .menu li a {
-  color: var(--black-color);
 }
 
 .navbar .menu li a:hover {
   color: var(--yellow-color);
 }
 
+.navbar.sticky .menu li a {
+  color: var(--black-color);
+}
+
 .navbar.sticky .menu li a:hover {
   color: var(--white-color);
+}
+
+.navbar .lng-buttons {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 1300px;
+  min-width: 80px;
+  display: flex;
+  z-index: 1000;
+}
+.lng-buttons.hide {
+  display: None;
+}
+
+.lng-buttons button {
+  margin-left: 5px;
+  background: None;
+  border: None;
+  cursor: pointer;
 }
 
 /* scroll-uo bytton styling */
@@ -145,13 +166,13 @@ body::after {
   height: 45px;
   width: 42px;
   background: crimson;
-  right: calc(var(--basic_size)*3);
-  bottom: calc(var(--basic_size)*3);
+  right: calc(var(--basic_size) * 3);
+  bottom: calc(var(--basic_size) * 3);
   text-align: center;
   line-height: 45px;
   color: var(--white-color);
   z-index: 9999;
-  font-size: calc(var(--basic_size)*3);
+  font-size: calc(var(--basic_size) * 3);
   border-radius: 6px;
   border-bottom-width: 2px;
   cursor: pointer;
@@ -181,11 +202,15 @@ footer {
 }
 
 /* responsive styling */
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
+  .navbar .lng-buttons {
+    margin-top: 100px;
+    margin-left: 50px;
+  }
   .menu-btn {
     display: block;
     z-index: 999;
-    padding-right: 50px;
+    margin-right: 50px;
   }
 
   .menu-btn i.active:before {
@@ -220,5 +245,20 @@ footer {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-btn {
+    margin-left: 20px;
+    margin-right: 30px;
+  }
+  .navbar .logo {
+    padding-left: 5px;
+  }
+  .navbar .lng-buttons {
+    margin-top: 130px;
+    margin-left: 5px;
+    margin-bottom: 20px;
   }
 }

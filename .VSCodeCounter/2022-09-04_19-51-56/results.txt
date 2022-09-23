@@ -1,0 +1,73 @@
+Date : 2022-09-04 19:51:56
+Directory : c:\Users\User\Desktop\solar_dynamics\website\y
+Total : 41 files,  2895 codes, 49 comments, 318 blanks, all 3262 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| PostCSS    |         10 |      1,053 |         39 |        213 |      1,305 |
+| JavaScript |         17 |        932 |          6 |         34 |        972 |
+| HTML       |          8 |        848 |          1 |         68 |        917 |
+| XML        |          5 |         32 |          0 |          0 |         32 |
+| Markdown   |          1 |         30 |          3 |          3 |         36 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                          | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                             |         41 |      2,895 |         49 |        318 |      3,262 |
+| .idea                                                                                         |          5 |         32 |          0 |          0 |         32 |
+| .idea\inspectionProfiles                                                                      |          1 |          6 |          0 |          0 |          6 |
+| functions                                                                                     |         13 |        563 |          2 |         25 |        590 |
+| languages                                                                                     |          2 |        319 |          0 |          2 |        321 |
++-----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                      | language   | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\User\Desktop\solar_dynamics\website\y\.idea\09_solar_website.iml                     | XML        |          8 |          0 |          0 |          8 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\.idea\inspectionProfiles\profiles_settings.xml | XML        |          6 |          0 |          0 |          6 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\.idea\misc.xml                                 | XML        |          4 |          0 |          0 |          4 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\.idea\modules.xml                              | XML        |          8 |          0 |          0 |          8 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\.idea\vcs.xml                                  | XML        |          6 |          0 |          0 |          6 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\README.md                                      | Markdown   |         30 |          3 |          3 |         36 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\achievements.css                               | PostCSS    |         51 |          4 |         13 |         68 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\achievements.html                              | HTML       |         65 |          0 |          6 |         71 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\all.min.css                                    | PostCSS    |          1 |          4 |          0 |          5 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\career.css                                     | PostCSS    |         87 |          2 |         17 |        106 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\career.html                                    | HTML       |         74 |          0 |          8 |         82 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\cars.css                                       | PostCSS    |        175 |          6 |         32 |        213 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\cars.html                                      | HTML       |         86 |          0 |          9 |         95 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\common.css                                     | PostCSS    |        198 |          5 |         35 |        238 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\common.js                                      | JavaScript |         24 |          3 |          3 |         30 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\departments.css                                | PostCSS    |         66 |          3 |         14 |         83 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\departments.html                               | HTML       |         58 |          0 |          9 |         67 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\functions\add_achievement.js                   | JavaScript |         13 |          0 |          1 |         14 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\functions\add_column_rght.js                   | JavaScript |         61 |          0 |          4 |         65 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\functions\add_form_link.js                     | JavaScript |         51 |          0 |          2 |         53 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\functions\add_member.js                        | JavaScript |        150 |          0 |          6 |        156 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\functions\add_nav_links.js                     | JavaScript |         25 |          0 |          1 |         26 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\functions\add_navbar.js                        | JavaScript |         47 |          0 |          1 |         48 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\functions\add_parrameter.js                    | JavaScript |         74 |          2 |          1 |         77 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\functions\add_partner.js                       | JavaScript |         10 |          0 |          1 |         11 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\functions\add_podcasts.js                      | JavaScript |         33 |          0 |          2 |         35 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\functions\add_reasons.js                       | JavaScript |         39 |          0 |          2 |         41 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\functions\add_row_partners.js                  | JavaScript |         13 |          0 |          1 |         14 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\functions\add_slide.js                         | JavaScript |         30 |          0 |          2 |         32 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\functions\translate.js                         | JavaScript |         17 |          0 |          1 |         18 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\index.html                                     | HTML       |        263 |          0 |         11 |        274 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\languages\en.js                                | JavaScript |        159 |          0 |          1 |        160 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\languages\pl.js                                | JavaScript |        160 |          0 |          1 |        161 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\media.css                                      | PostCSS    |        107 |          5 |         20 |        132 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\media.html                                     | HTML       |        108 |          1 |          7 |        116 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\partnership.css                                | PostCSS    |        116 |          4 |         28 |        148 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\partnership.html                               | HTML       |        118 |          0 |          9 |        127 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\script.js                                      | JavaScript |         26 |          1 |          4 |         31 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\style.css                                      | PostCSS    |        191 |          3 |         43 |        237 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\team.css                                       | PostCSS    |         61 |          3 |         11 |         75 |
+| c:\Users\User\Desktop\solar_dynamics\website\y\team.html                                      | HTML       |         76 |          0 |          9 |         85 |
+| Total                                                                                         |            |      2,895 |         49 |        318 |      3,262 |
++-----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

@@ -2,9 +2,7 @@ section {
   padding: calc(var(--basic_size) * 10) 0;
 }
 
-.about .about-content,
-.services .serv-content,
-.skills .skills-content {
+.about-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -63,8 +61,8 @@ section .subtitle {
   margin-left: -83px;
 }
 
-.home .home-content .text-3,
-.home .home-content .text-4 {
+.home .text-3,
+.home .text-4 {
   font-size: calc(var(--basic_size) * 4);
   margin: 5px 0;
   margin-left: calc(var(--basic_size) * -8);
@@ -201,6 +199,53 @@ section .subtitle {
   color: hsl(131, 97%, 41%);
 }
 
+/* responsive styling */
+@media (max-width: 700px) {
+  .about-content .column-left {
+    display: None;
+  }
+  .about-content .column-right {
+    min-width: 120%;
+    margin-left: -10%;
+  }
+}
+@media (max-width: 400px) {
+  .about-content .column-right {
+    min-width: 150%;
+    margin-left: -20%;
+  }
+}
+@media (max-width: 800px) {
+  .text-1 {
+    font-size: 16px !important;
+  }
+  .text-2 {
+    font-size: 48px !important;
+  }
+  .text-3,
+  .text-4 {
+    font-size: 28px !important;
+  }
+}
+.sub-title span {
+  display: inline;
+}
+#small {
+  display: None;
+}
+@media (max-width: 850px) {
+  .sub-title span {
+    display: block;
+  }
+  #small {
+    display: None;
+  }
+}
+@media (min-width: 850px) {
+  .contact-content: {
+    padding-left: 120px;
+  }
+}
 @media (max-width: 1300px) {
   .home .home-content .text-1 {
     padding-top: calc(var(--basic_size) * 10);
@@ -211,34 +256,25 @@ section .subtitle {
     text-align: center;
   }
 
-  .contact .contact-content .column-left,
+  .contact-content .column-left,
   .contact .contact-content .column-middle,
-  .contact .contact-content .column-right {
+  .contact-content .column-right {
     text-align: center;
     width: 100%;
-    padding-left: 30%;
   }
 
   .contact .row {
     text-align: justify;
   }
 
-  .about .about-content {
+  .about-content {
     display: block;
     text-align: center;
   }
 
-  .about .about-content .column-left,
-  .about .about-content .column-right {
+  .about-content .column-left,
+  .about-content .column-right {
     width: 100%;
     text-align: center;
-  }
-}
-
-@media (max-width: 500px) {
-  .contact-content .column-right,
-  .contact-content .column-middle,
-  .contact-content .column-left {
-    margin-left: -100px !important;
   }
 }

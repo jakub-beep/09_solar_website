@@ -13,7 +13,6 @@ section {
 }
 
 table {
-  border: red 3px dashed;
   border-collapse: separate;
   border-spacing: 0;
   text-align: center;

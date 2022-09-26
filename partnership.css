@@ -71,6 +71,9 @@
   justify-content: center;
   background-color: var(--white-color);
 }
+body::after {
+  background-color: var(--white-color);
+}
 
 .max_title_2 {
   padding-top: calc(var(--basic_size) * 5);

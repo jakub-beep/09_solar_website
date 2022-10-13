@@ -25,27 +25,27 @@ const add_form_link = (href, img, accesskey) => {
 
 const add_form_links = () => {
   add_form_link(
-    "1-hbn6Qtaxv1o-N47pjdRu0k4EMfC_L3Ehn9drrQL710/edit",
+    "e/1FAIpQLScE60wJbN3ke7vg6U-Vv9UIliXnq-hu8RxBNSofwbcBPwAvAw/viewform",
     '<i class="fas fa-wrench"></i>',
     "suspension"
   );
   add_form_link(
-    "1Tl-q16Fi573Oi7m0DlaVmavEP_r8AQB61o0VL7F0MR8/edit",
+    "e/1FAIpQLSdr8N9JMHKp2-N-Y8vkLOLEZBRH0atR3PZEZlNHGK1dezG93A/viewform",
     '<i class="fas fa-water"></i>',
     "aerodynamics"
   );
   add_form_link(
-    "16iHh-0OOc-0-FK_MhQPEknDKHTIkxcpTLvL6K_bKTTI/edit",
+    "e/1FAIpQLSfGQ20STar2K9LXZBeOd9kidn7sr1a8XhCNquX7s4zKH90-0Q/viewform",
     '<i class="fas fa-car-battery"></i>',
     "electric"
   );
   add_form_link(
-    "16iHh-0OOc-0-FK_MhQPEknDKHTIkxcpTLvL6K_bKTTI/edit",
+    "1H_Ofbv2eZuvniEFc2GTmOdcAJ6fFKI6Xj67isvo6MPg/edit?fbclid=IwAR0vkr2Q-hdHd6rxFNW6C9PbRITXtQgl9BAZdqlgi_nNT1zkeV_FMAhKELA",
     '<i class="fas fa-laptop"></i>',
     "marketing"
   );
   add_form_link(
-    "1pKjpmgwXd26Ke1kx2WT9EVx-YsKNdl_zZZ4AwWzbEJQ/edit",
+    "e/1FAIpQLSfGQ20STar2K9LXZBeOd9kidn7sr1a8XhCNquX7s4zKH90-0Q/viewform",
     '<i class="fas fa-video"></i>',
     "electronics"
   );

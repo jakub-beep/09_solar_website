@@ -17,7 +17,7 @@ const add_navbar = () => {
   menu_btn.className = "menu-btn";
   menu_btn.innerHTML = '<i class="fas fa-bars"></i>';
   span.innerHTML = "SOLAR";
-  link.href = "#";
+  link.href = "index.html";
   link.appendChild(span);
   link_text = document.createTextNode("DYNAMICS");
   link.appendChild(link_text);

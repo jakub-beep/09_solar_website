@@ -168,4 +168,8 @@ pl = {
   wanna_know: "Chcesz się dowiedzieć co mówią o nas w mediach?",
   answers:
     "Poniżej znajdziecie odpowiedzi! Przeczytajcie artykuły, posłuchajcie podcastów i obejrzyjcie nasz film promocyjny!",
+  suspension_type: "Niezależne",
+  motors: "2 BLDC w piastach",
+  laminates: "Laminat węglowy",
+  cage_steel: "Stal 25CrMo4",
 };

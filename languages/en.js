@@ -166,4 +166,8 @@ en = {
   wanna_know: "Wanna know what media talk about us?",
   answers:
     "Below you'll find answers! Read articles, listen to our podcasts and watch our promo video!",
+  suspension_type: "Double wishbone",
+  motors: "2 BLDC in hubs",
+  laminates: "Carbon laminates",
+  cage_steel: "25CrMo4 steel",
 };

@@ -8,6 +8,8 @@ const add_parameter = (parameter, value, accessKey, table_id) => {
   col1.className = "left";
   col2.className = "right";
   value_holder.innerHTML = value;
+  value_holder.className = "lang";
+  value_holder.accessKey = value;
   span.className = "lang";
   span.accessKey = accessKey;
   span.innerHTML = parameter;
@@ -33,14 +35,13 @@ const add_parameters = () => {
   add_parameter("Cx coefficient", 0.17, "cx", "parameters_klara");
   add_parameter(
     "Suspension",
-    "Double wishbone",
+    "suspension_type",
     "susp_par",
     "parameters_klara"
   );
-  add_parameter("Motors", "2 BLDC in hubs", "motors", "parameters_klara");
-  add_parameter("Roll Cage", "25CrMo4 stel", "roll_cage", "parameters_klara");
-  add_parameter("Body", "Carbon laminates", "body", "parameters_klara");
-  add_parameter("Roll Cage", "25CrMo4 steel", "roll_cage", "parameters_klara");
+  add_parameter("Motors", "motors", "motors", "parameters_klara");
+  add_parameter("Roll Cage", "cage_steel", "roll_cage", "parameters_klara");
+  add_parameter("Body", "laminates", "body", "parameters_klara");
   add_parameter("Seats", 2, "seats", "parameters_klara");
   // VACLAV
   add_parameter("Height [mm]", "TBA", "height", "parameters_vaclav");
@@ -65,12 +66,12 @@ const add_parameters = () => {
   add_parameter("Cx coefficient", "TBA", "cx", "parameters_vaclav");
   add_parameter(
     "Suspension",
-    "Double wishbone",
+    "suspension_type",
     "susp_par",
     "parameters_vaclav"
   );
-  add_parameter("Motors", "2 BLDC in hubs", "motors", "parameters_vaclav");
-  add_parameter("Body", "Carbon laminates", "body", "parameters_vaclav");
-  add_parameter("Roll Cage", "25CrMo4 stel", "roll_cage", "parameters_vaclav");
+  add_parameter("Motors", "motors", "motors", "parameters_vaclav");
+  add_parameter("Body", "laminates", "body", "parameters_vaclav");
+  add_parameter("Roll Cage", "cage_steel", "roll_cage", "parameters_vaclav");
   add_parameter("Seats", 4, "seats", "parameters_vaclav");
 };

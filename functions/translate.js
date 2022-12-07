@@ -1,4 +1,5 @@
 const translate_refresh = () => {
+  console.log("yyy");
   $(".lang").each(function (index, item) {
     $(this).text(arrLang[lang][$(this).attr("accessKey")]);
   });

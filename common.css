@@ -113,7 +113,7 @@ body::after {
   color: var(--black-color);
 }
 .navbar .menu {
-  margin-right: 32px;
+  margin-right: 100px;
 }
 .navbar .menu li {
   list-style: none;
@@ -144,7 +144,7 @@ body::after {
 .navbar .lng-buttons {
   position: absolute;
   margin-top: 4px;
-  margin-left: 1300px;
+  margin-left: 1230px;
   min-width: 80px;
   display: flex;
   z-index: 1000;
@@ -202,7 +202,7 @@ footer {
 }
 
 /* responsive styling */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .navbar .lng-buttons {
     margin-top: 100px;
     margin-left: 50px;

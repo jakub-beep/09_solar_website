@@ -27,4 +27,18 @@ $(document).ready(function () {
     backSpeed: 60,
     loop: true,
   });
+
+  var typed = new Typed(".typing-5", {
+    strings: ["Mechaniker", "Elektriker", "Entwickler"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+  });
+
+  var typed = new Typed(".typing-6", {
+    strings: ["Studenten", "Ingenieure", "Visionäre"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+  });
 });

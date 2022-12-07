@@ -49,27 +49,29 @@ section .subtitle {
   margin-right: 0;
 }
 
-.home .home-content .text-1 {
+.text-1 {
   font-size: 27px;
   margin-top: calc(var(--basic_size) * -10);
   margin-left: calc(var(--basic_size) * -8);
 }
 
-.home .home-content .text-2 {
+.text-2 {
   font-size: 75px;
   font-weight: calc(var(--basic_font_weight) * 6);
   margin-left: -83px;
 }
 
-.home .text-3,
-.home .text-4 {
+.text-3,
+.text-4,
+.text-5 {
   font-size: calc(var(--basic_size) * 4);
   margin: 5px 0;
   margin-left: calc(var(--basic_size) * -8);
 }
 
-.home .home-content .text-3 span,
-.home .home-content .text-4 span {
+.text-3 span,
+.text-4 span,
+.text-5 span {
   color: var(--yellow-color);
   font-weight: calc(var(--basic_font_weight) * 5);
 }
@@ -105,15 +107,17 @@ section .subtitle {
   width: 50%;
 }
 
-.text-5,
-.text-6 {
+.text-6,
+.text-7,
+.text-8 {
   font-size: calc(var(--basic_size) * 3);
   font-weight: calc(var(--basic_font_weight) * 6);
   margin-bottom: var(--basic_size);
 }
 
-.text-5 span,
-.text-6 span {
+.text-6 span,
+.text-7 span,
+.text-8 span {
   color: hsl(38 100% 56%);
 }
 

@@ -23,6 +23,7 @@
     <script src="common.js"></script>
     <script type="text/javascript" src="./languages/en.js"></script>
     <script type="text/javascript" src="./languages/pl.js"></script>
+    <script type="text/javascript" src="./languages/ge.js"></script>
     <script src="functions/add_navbar.js"></script>
     <script src="functions/translate.js"></script>
   </head>
@@ -94,6 +95,9 @@
           <button href="" id="pl" class="translate">
             <img width="40px" src="./flags/pl.png" alt="" />
           </button>
+          <button href="" id="ge" class="translate">
+            <img width="40px" src="./flags/ge.png" alt="" />
+          </button>
         </div>
       </div>
     </nav>
@@ -110,6 +114,9 @@
           </div>
           <div id="text-4" class="text-4">
             A wśród nas: <span class="typing-3"></span>
+          </div>
+          <div id="text-5" class="text-5">
+            Und wir sind: <span class="typing-5"></span>
           </div>
         </div>
       </div>
@@ -141,11 +148,14 @@
             />
           </div>
           <div class="column-right">
-            <div id="text-5" class="text-5">
+            <div id="text-6" class="text-7">
               We are <span class="typing-2"></span>
             </div>
-            <div id="text-6" class="text-6">
+            <div id="text-7" class="text-7">
               Jesteśmy <span class="typing-4"></span>
+            </div>
+            <div id="text-8" class="text-8">
+              Wir sind <span class="typing-6"></span>
             </div>
             <p class="lang" accesskey="description"></p>
           </div>
@@ -155,8 +165,12 @@
 
     <section class="contact" id="contact">
       <div class="max-width">
-        <div class="title">Contact us</div>
-        <div class="subtitle">--<span>Get in touch!</span>--</div>
+        <div class="title">
+          <span class="lang" accesskey="contact_us"></span>
+        </div>
+        <div class="subtitle">
+          --<span class="lang" accessKey="touch"></span>--
+        </div>
         <div class="text_2">
           <span class="lang" accessKey="below"></span>
         </div>
@@ -285,21 +299,40 @@
       var arrLang = {
         en,
         pl,
+        ge,
       };
 
       const text3 = document.getElementById("text-3");
       const text4 = document.getElementById("text-4");
       const text5 = document.getElementById("text-5");
       const text6 = document.getElementById("text-6");
+      const text7 = document.getElementById("text-7");
+      const text8 = document.getElementById("text-8");
       const lang = localStorage.getItem("lng");
+
       if (lang == "en") {
+        text3.style.display = "block";
         text4.style.display = "none";
-        text6.style.display = "none";
+        text5.style.display = "none";
+        text6.style.display = "block";
+        text7.style.display = "none";
+        text8.style.display = "none";
       }
       if (lang == "pl") {
         text3.style.display = "none";
         text4.style.display = "block";
         text5.style.display = "none";
+        text6.style.display = "none";
+        text7.style.display = "block";
+        text8.style.display = "none";
+      }
+      if (lang == "ge") {
+        text3.style.display = "none";
+        text4.style.display = "none";
+        text5.style.display = "block";
+        text6.style.display = "none";
+        text7.style.display = "none";
+        text8.style.display = "block";
       }
       translate_refresh();
       $(function () {
@@ -309,12 +342,23 @@
             text3.style.display = "none";
             text4.style.display = "block";
             text5.style.display = "none";
-            text6.style.display = "block";
+            text6.style.display = "none";
+            text7.style.display = "block";
+            text8.style.display = "none";
           } else if (lang == "en") {
             text3.style.display = "block";
             text4.style.display = "none";
+            text5.style.display = "none";
+            text6.style.display = "block";
+            text7.style.display = "none";
+            text8.style.display = "none";
+          } else if (lang == "ge") {
+            text3.style.display = "none";
+            text4.style.display = "none";
             text5.style.display = "block";
             text6.style.display = "none";
+            text7.style.display = "none";
+            text8.style.display = "block";
           }
           localStorage.setItem("lng", String(lang));
           $(".lang").each(function (index, item) {

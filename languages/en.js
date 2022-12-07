@@ -26,14 +26,12 @@ en = {
   communication are always on the first position, which provides us
   continuous growth. We believe that the practical experience gained
   through participation in our project will result in future
-  professional success.
-`,
+  professional success.`,
   contact_us: "Contact Us",
   touch: "Get in touch!",
   below: `Below you can find our contact informations and links to our social
   media, feel free to contact us anytime! We will answer your questions
-  eagerly as soon as possible.
-`,
+  eagerly as soon as possible.`,
   our_achievements: "Our achievements so far!",
   eco_challenge_audience: "Ekoinnovators challenge - audience award",
   ilumen:

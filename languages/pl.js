@@ -79,7 +79,7 @@ pl = {
   dep_aero_area_1: "Karoseria pojazdu;",
   dep_aero_area_2: "Ergonomia pasażerów;",
   dep_aero_area_3: "Analizy aerodynamiczne oraz wytrzymałościowe;",
-  dep_aero_area_4: "Komponenty kopozytowe pojazdu;",
+  dep_aero_area_4: "Komponenty kompozytowe pojazdu;",
   dep_aero_area_5: "Wyposażenie wnętrza.",
   dep_aero_ability_1:
     "Projektowanie CAD, znajomość rysunku technicznego (CATIA V6, SW);",
@@ -106,7 +106,7 @@ pl = {
   dep_electr_area_5: "Panele solarne.",
   dep_electr_ability_1: "Łączenie, lutowanie wiązek elektrycznych;",
   dep_electr_ability_2: "Projektowanie układów elektrycznych;",
-  dep_electr_ability_3: "Obsługa komp1ntów i narzędzi elektrycznych;",
+  dep_electr_ability_3: "Obsługa komponentów i narzędzi elektrycznych;",
   dep_electr_ability_4: "Projektowanie i dobór urządzeń elektrycznych;",
   dep_electr_ability_5: "Prace ogólnowarsztatowe.",
   dep_emb_area_1: "Magistrala komunikacyjna CAN;",
@@ -135,7 +135,7 @@ pl = {
   projektowej, ale już teraz możemy ujawnić kilka szczegółów!
   `,
   old_project: "Nasza duma, jedyna w swoim rodzaju Klara.",
-  career_with_us: "Career with SOLAR DYNAMICS",
+  career_with_us: "Kariera z SOLAR DYNAMICS",
   forms:
     "Poniżej znajdziesz linki do formularzy rekrutacyjnych do wszystkich naszych działów:",
   know_more: "Chcesz dowiedzieć się więcej o wydziałach?",
@@ -152,7 +152,7 @@ pl = {
   not_enough: " to za mało?",
   fantasy: "Marzysz o ",
   exploded_career: "oszałamiającej karierze",
-  sacrifice: "Jesteś gotów na poświęcenie swojego czasu i",
+  sacrifice: "Jesteś gotów poświęcić swój czas i",
   addicted: " uzależnić się od",
   designing: " projektowania?",
   finally: "i nareszcie",

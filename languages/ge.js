@@ -91,7 +91,7 @@ ge = {
   dep_aero_ability_4:
     "Fähigkeit zur Auswahl von Materialien, insbesondere von Verbundwerkstoffen;",
   dep_aero_ability_5:
-    "Laminierung, CNC, 3D-Druck, allgemeine Werkstattarbeiten;",
+    "Laminierung, CNC, 3D-Druck, allgemeine Werkstattarbeiten.",
   dep_susp_area_1: "Aufhängung;",
   dep_susp_area_2: "Fahrzeugdynamik;",
   dep_susp_area_3: "Fahrzeugkinematik;",

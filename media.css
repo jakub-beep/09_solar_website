@@ -44,6 +44,14 @@ section {
   font-weight: bold;
   text-align: center;
 }
+.title-podcasts {
+  color: var(--yellow-color);
+  padding-bottom: 24px;
+  padding-top: calc(var(--basic_size) * 3);
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
 
 .title span {
   color: var(--yellow-color);

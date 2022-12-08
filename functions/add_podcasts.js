@@ -43,17 +43,17 @@ const add_podcasts = () => {
     "01.09.22",
     "Afera"
   );
-  add_podcast(-1, "23_water", "Ładowanie elektryków wodą", "09.06.22", "Afera");
-  add_podcast(-1, "22_types", "Rodzaje aut i oznaczeń", "26.05.22", "Afera");
-  add_podcast(-1, "19_future", "Przyszłość motoryzacji", "12.05.22", "Afera");
-  add_podcast(-1, "21_batteries", "Wymienne baterie", "28.04.22", "Afera");
   add_podcast(
     -1,
     "20_cheapest",
     "Ranking najtańśzych elektryków",
-    "07.07.22",
+    "23.06.22",
     "Afera"
   );
+  add_podcast(-1, "23_water", "Ładowanie elektryków wodą", "09.06.22", "Afera");
+  add_podcast(-1, "22_types", "Rodzaje aut i oznaczeń", "26.05.22", "Afera");
+  add_podcast(-1, "19_future", "Przyszłość motoryzacji", "12.05.22", "Afera");
+  add_podcast(-1, "21_batteries", "Wymienne baterie", "28.04.22", "Afera");
   add_podcast(-1, "18_hybrid", "Auta hybrydowe", "21.04.22", "Afera");
   add_podcast(
     -1,

@@ -25,7 +25,7 @@ const add_member = (photo, alt_text, name, department) => {
   parent.appendChild(div);
 };
 const append_members = () => {
-  add_member("tonder.jpg", "Aero leader", "Eryk Tonder", "row_0");
+  add_member("antczak.jpg", "Aerodynamics member", "Weronika Antczak", "row_0");
   add_member("jasinski.jpg", "Suspension leader", "Jacek Jasiński", "row_0");
   add_member("gawin.jpg", "Electrician leader", "Michał Gawin", "row_0");
   add_member(
@@ -149,4 +149,5 @@ const append_members = () => {
   add_member("kujawski.jpg", "Old guard", "Maurycy Kujawski", "row_13");
   add_member("miazga.jpg", "Old guard", "Marcin Miazga", "row_13");
   add_member("czaja.jpg", "Electric member", "Paweł Czaja", "row_13");
+  add_member("tonder.jpg", "Aero leader", "Eryk Tonder", "row_13");
 };

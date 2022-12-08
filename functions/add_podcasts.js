@@ -1,4 +1,4 @@
-const add_podcast = (row, source, name, date, station) => {
+const add_podcast = (row = -1, source, name, date, station) => {
   const table = document.getElementById("podcasts-table");
   const table_row = table.insertRow(row);
   const col1 = table_row.insertCell(0);
@@ -21,18 +21,85 @@ const add_podcast = (row, source, name, date, station) => {
 
 const add_podcasts = () => {
   add_podcast(
-    1,
+    -1,
+    "28_autonomic_bus",
+    "Autonomiczny autobus",
+    "27.10.22",
+    "Afera"
+  );
+  add_podcast(
+    -1,
+    "27_winter",
+    "Jak przygotować auto na zimę?",
+    "13.10.22",
+    "Afera"
+  );
+  add_podcast(-1, "26_ilumen", "European Solar Challenge", "29.09.22", "Afera");
+  add_podcast(-1, "25_formula_e_2", "Formula E cd.", "15.09.22", "Afera");
+  add_podcast(
+    -1,
+    "24_current",
+    "O prądzie i jego pochodzeniu",
+    "01.09.22",
+    "Afera"
+  );
+  add_podcast(-1, "23_water", "Ładowanie elektryków wodą", "18.08.22", "Afera");
+  add_podcast(-1, "22_types", "Rodzaje aut i oznaczeń", "04.08.22", "Afera");
+  add_podcast(-1, "21_batteries", "Wymienne baterie", "21.07.22", "Afera");
+  add_podcast(
+    -1,
+    "20_cheapest",
+    "Ranking najtańśzych elektryków",
+    "07.07.22",
+    "Afera"
+  );
+  add_podcast(-1, "19_future", "Przyszłość motoryzacji", "24.06.22", "Afera");
+  add_podcast(-1, "18_hybrid", "Auta hybrydowe", "10.06.22", "Afera");
+  add_podcast(-1, "17_capacitor", "Kondensatory i grafen", "26.05.22", "Afera");
+  add_podcast(-1, "16_autonomous", "Pojazdy autonomiczne", "12.05.22", "Afera");
+  add_podcast(-1, "15_history", "Historia elektryków", "28.04.22", "Afera");
+  add_podcast(-1, "14_formula_e", "Formuła E", "14.04.22", "Afera");
+  add_podcast(
+    -1,
+    "13_electric_cars",
+    "Pojazdy elektryczne",
+    "31.03.22",
+    "Afera"
+  );
+  add_podcast(-1, "12_hydro_cars", "Pojazdy wodorowe", "17.03.22", "Afera");
+  add_podcast(
+    -1,
+    "11_failure",
+    "Gdy elektryka usterka dotyka",
+    "03.03.22",
+    "Afera"
+  );
+  add_podcast(
+    -1,
+    "10_eco_drive",
+    "Jak jeździć eko i nie zbankrutować?",
+    "17.02.22",
+    "Afera"
+  );
+  add_podcast(
+    -1,
     "09_story",
-    "Difficult story behind first electric cars",
+    "Trudna historia pierwszego elektryka",
     "03.02.22",
     "Afera"
   );
-  add_podcast(2, "08_engines", "About engines", "20.01.22", "Afera");
-  add_podcast(3, "07_legends", "Electric mythbusters", "20.12.21", "Afera");
-  add_podcast(4, "06_eco", "Are Electric Cars Green?", "20.12.21", "Afera");
-  add_podcast(5, "05_mans", "The Rise of the Klara", "20.12.21", "Afera");
-  add_podcast(6, "04_rise", "Solar le Mans", "20.12.21", "Afera");
-  add_podcast(7, "03_maxxx", "Electromobility_3", "07.12.18", "RMF MAXXX");
-  add_podcast(8, "02_maxxx", "Electromobility_2", "31.11.18", "RMF MAXXX");
-  add_podcast(9, "01_maxxx", "Electromobility", "14.10.18", "RMF MAXXX");
+  add_podcast(-1, "08_engines", "Co napędza elektryki?", "20.01.22", "Afera");
+  add_podcast(
+    -1,
+    "07_legends",
+    "Pogromcy elektrycznych mitów",
+    "06.01.22",
+    "Afera"
+  );
+  add_podcast(-1, "06_eco", "Czy elektryki są eko?", "23.12.21", "Afera");
+  add_podcast(-1, "05_mans", "Solar le Mans", "09.12.21", "Afera");
+  add_podcast(-1, "04_rise", "The Rise of the Klara", "25.11.21", "Afera");
+  add_podcast(-1, "03_maxxx", "Electromobility_3", "07.12.18", "RMF MAXXX");
+  add_podcast(-1, "02_maxxx", "Electromobility_2", "31.11.18", "RMF MAXXX");
+  add_podcast(-1, "01_maxxx", "Electromobility", "14.10.18", "RMF MAXXX");
 };

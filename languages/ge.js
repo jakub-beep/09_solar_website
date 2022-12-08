@@ -14,7 +14,7 @@ ge = {
   we: "Wir sind",
   description: `PUT SOLAR DYNAMICS ist ein Solarsportteam, das aus 50 Studenten besteht, 
   die 8 Fächer studieren und unter der Schirmherrschaft der Technischen Universität 
-  Poznan tätig sind. Unser Hauptziel ist der Bau von Solarfahrzeugen, die mit Strom 
+  Poznan tätig sind. Unser Hauptziel ist der Bau von Solarwagen, die mit Strom 
   betrieben werden, der zum Teil aus Solarzellen gewonnen wird.
   Diese Fahrzeuge ermöglichen uns die Teilnahme an Wettbewerben von Weltrang und die 
   Förderung erneuerbarer Energiequellen. Wir glauben, dass unsere Arbeit dazu beitragen wird
@@ -146,9 +146,9 @@ ge = {
   career_with_us: "Karriere mit SOLAR DYNAMICS",
   forms:
     "Im Folgenden finden Sie Links zu den Bewerbungsformularen für alle unsere Abteilungen:",
-  know_more: "Möchten Sie mehr über die Abteilungen erfahren??",
+  know_more: "Möchten Sie mehr über die Abteilungen erfahren?",
   hop: " Schauen Sie hier!",
-  cause: "Möchten Sie sich unserer Sache annehmen??",
+  cause: "Möchten Sie sich unserer Sache annehmen?",
   become_partner:
     "Möchten Sie mehr erfahren und unser Partner werden? Zögern Sie nicht, einzugreifen",
   here: "hier",
@@ -166,7 +166,7 @@ ge = {
   finally: "und schließlich",
   build: "Wollen Sie mit uns bauen ",
   graduation: " direkt nach der Graduierung?",
-  solar_cars: "Solarfahrzeuge",
+  solar_cars: "Solarwagen",
   with: "?",
   apply: " Bewerben!",
   link: "Link",
@@ -174,7 +174,7 @@ ge = {
   date: "Datum",
   radio: "Radiostation",
   wanna_know:
-    "Wollen Sie herausfinden, was in den Medien über uns gesagt wird??",
+    "Wollen Sie herausfinden, was in den Medien über uns gesagt wird?",
   answers: `Im Folgenden finden Sie die Antworten! Lesen Sie die Artikel, 
     hören Sie die Podcasts und sehen Sie sich unser Werbevideo an!`,
   suspension_type: "Unabhängig",

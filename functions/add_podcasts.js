@@ -24,18 +24,18 @@ const add_podcasts = () => {
     -1,
     "28_autonomic_bus",
     "Autonomiczny autobus",
-    "27.10.22",
+    "08.12.22",
     "Afera"
   );
   add_podcast(
     -1,
     "27_winter",
     "Jak przygotować auto na zimę?",
-    "13.10.22",
+    "01.12.22",
     "Afera"
   );
-  add_podcast(-1, "26_ilumen", "European Solar Challenge", "29.09.22", "Afera");
-  add_podcast(-1, "25_formula_e_2", "Formula E cd.", "15.09.22", "Afera");
+  add_podcast(-1, "26_ilumen", "European Solar Challenge", "17.11.22", "Afera");
+  add_podcast(-1, "25_formula_e_2", "Formula E cd.", "10.11.22", "Afera");
   add_podcast(
     -1,
     "24_current",
@@ -43,9 +43,10 @@ const add_podcasts = () => {
     "01.09.22",
     "Afera"
   );
-  add_podcast(-1, "23_water", "Ładowanie elektryków wodą", "18.08.22", "Afera");
-  add_podcast(-1, "22_types", "Rodzaje aut i oznaczeń", "04.08.22", "Afera");
-  add_podcast(-1, "21_batteries", "Wymienne baterie", "21.07.22", "Afera");
+  add_podcast(-1, "23_water", "Ładowanie elektryków wodą", "09.06.22", "Afera");
+  add_podcast(-1, "22_types", "Rodzaje aut i oznaczeń", "26.05.22", "Afera");
+  add_podcast(-1, "19_future", "Przyszłość motoryzacji", "12.05.22", "Afera");
+  add_podcast(-1, "21_batteries", "Wymienne baterie", "28.04.22", "Afera");
   add_podcast(
     -1,
     "20_cheapest",
@@ -53,12 +54,17 @@ const add_podcasts = () => {
     "07.07.22",
     "Afera"
   );
-  add_podcast(-1, "19_future", "Przyszłość motoryzacji", "24.06.22", "Afera");
-  add_podcast(-1, "18_hybrid", "Auta hybrydowe", "10.06.22", "Afera");
-  add_podcast(-1, "17_capacitor", "Kondensatory i grafen", "26.05.22", "Afera");
-  add_podcast(-1, "16_autonomous", "Pojazdy autonomiczne", "12.05.22", "Afera");
-  add_podcast(-1, "15_history", "Historia elektryków", "28.04.22", "Afera");
-  add_podcast(-1, "14_formula_e", "Formuła E", "14.04.22", "Afera");
+  add_podcast(-1, "18_hybrid", "Auta hybrydowe", "21.04.22", "Afera");
+  add_podcast(
+    -1,
+    "17_capacitor",
+    "Superkondensatory i grafen",
+    "14.04.22",
+    "Afera"
+  );
+  add_podcast(-1, "16_autonomous", "Pojazdy autonomiczne", "07.04.22", "Afera");
+  add_podcast(-1, "15_history", "Historia elektryków", "31.03.22", "Afera");
+  add_podcast(-1, "14_formula_e", "Formuła E", "24.03.22", "Afera");
   add_podcast(
     -1,
     "13_electric_cars",

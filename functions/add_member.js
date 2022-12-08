@@ -25,7 +25,7 @@ const add_member = (photo, alt_text, name, department) => {
   parent.appendChild(div);
 };
 const append_members = () => {
-  add_member("antczak.jpg", "Aerodynamics member", "Weronika Antczak", "row_0");
+  add_member("antczak.jpg", "Aerodynamics leader", "Weronika Antczak", "row_0");
   add_member("jasinski.jpg", "Suspension leader", "Jacek Jasiński", "row_0");
   add_member("gawin.jpg", "Electrician leader", "Michał Gawin", "row_0");
   add_member(
